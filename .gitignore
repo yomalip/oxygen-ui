@@ -70,3 +70,16 @@ docs/
 
 .ai/
 .claude/
+
+# design-sync (claude.ai/design)
+# Committed: .design-sync/{config.json,NOTES.md,conventions.md} and, if ever
+# created, previews/ and overrides/. Everything below is regenerated per machine.
+.ds-sync/
+ds-bundle/
+.design-sync/sb-reference/
+.design-sync/learnings/
+.design-sync/.cache/
+.design-sync/node_modules
+.design-sync/*.log
+.design-sync/push-*.json
+.design-sync/final-*.json
