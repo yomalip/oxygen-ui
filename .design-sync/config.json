@@ -1,0 +1,91 @@
+{
+  "projectId": "e7a79865-b341-438f-b4e9-a2eda9e8c70b",
+  "shape": "storybook",
+  "pkg": "@wso2/oxygen-ui",
+  "globalName": "OxygenUI",
+  "storybookConfigDir": "packages/oxygen-ui-docs/.storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "readmeHeader": ".design-sync/conventions.md",
+  "buildCmd": "pnpm --filter @wso2/oxygen-ui --filter @wso2/oxygen-ui-icons-react --filter @wso2/oxygen-ui-charts-react build",
+  "entry": "packages/oxygen-ui/.design-sync-entry.mjs",
+  "extraEntries": ["@wso2/oxygen-ui-charts-react"],
+  "storyImports": {
+    "bundle": ["@wso2/oxygen-ui-icons-react"]
+  },
+  "overrides": {
+    "ParticleBackground": {"cardMode": "single", "primaryStory": "Default"},
+    "NotificationPanel": {"cardMode": "single", "primaryStory": "Default"},
+
+    "AppShell": {"cardMode": "column"},
+    "Header": {"cardMode": "column"},
+    "ListingTable": {"cardMode": "column"},
+    "StatCard": {"cardMode": "column"},
+    "AreaChart": {"cardMode": "column"},
+    "BarChart": {"cardMode": "column"},
+    "LineChart": {"cardMode": "column"},
+    "PieChart": {"cardMode": "column"},
+    "RadarChart": {"cardMode": "column"},
+    "RadialBarChart": {"cardMode": "column"},
+    "Divider": {"cardMode": "column"},
+    "Typography": {"cardMode": "column"},
+    "CircularProgress": {"cardMode": "column"},
+    "Autocomplete": {"cardMode": "column"},
+    "SearchBar": {"cardMode": "column"},
+    "Grid": {"cardMode": "column"},
+    "ImageList": {"cardMode": "column"},
+    "Layout": {"cardMode": "column"},
+    "BottomNavigation": {"cardMode": "column"},
+    "Drawer": {"cardMode": "column"},
+    "SpeedDial": {"cardMode": "column"},
+    "Stepper": {"cardMode": "column"},
+    "Tabs": {"cardMode": "column"},
+    "Accordion": {"cardMode": "column"},
+    "AppBar": {"cardMode": "column"},
+    "ColorSchemeSVG": {
+      "cardMode": "column",
+      "skip": [
+        "theming-colorschemesvg--with-relative-svg-file",
+        "theming-colorschemesvg--with-mode-aware-svg-components"
+      ]
+    },
+    "ColorSchemeToggle": {"cardMode": "column"},
+    "ThemeSwitcher": {"cardMode": "column"},
+    "Popper": {"cardMode": "column"}
+  },
+  "titleMap": {
+    "Welcome": null,
+    "Accessibility": null,
+    "GettingStarted": null,
+    "HowToContribute": null,
+    "HowToAddRuntimeThemeSupport": null,
+
+    "Colors": null,
+
+    "useAppShell": null,
+    "useColorScheme": null,
+    "useMediaQuery": null,
+    "useTheme": null,
+    "useThemeContent": null,
+    "createOxygenTheme": null,
+
+    "Templates": null,
+    "CreateServiceForm": null,
+    "Dashboard": null,
+    "EmptyState": null,
+    "FormValidation": null,
+    "Login": null,
+    "TabbedContent": null,
+    "Wizard": null,
+
+    "ClickableCard": null,
+    "NumberField": null,
+    "TransferList": null,
+    "Transitions": null,
+
+    "FloatingActionButton": "Fab",
+    "FormElements": "Form",
+    "Progress": "CircularProgress",
+    "Icons": "Icon",
+    "DatePicker": "DatePickers"
+  }
+}
